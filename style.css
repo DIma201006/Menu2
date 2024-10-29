@@ -1,0 +1,77 @@
+.box {
+    width: 330px;
+    height: 310px;
+    background-color: orange;
+    border: 1px solid black;
+    margin: 0px;
+    margin-top: 50px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+            animation-delay: 40ms;
+            animation-duration: 6s;
+}
+
+.box:hover {
+        animation-name: menu;
+}
+
+@keyframes menu {
+  0% {
+transform:translate(30px);
+  }
+
+  20% {
+    transform:translate(250px);
+  }
+
+  30% {
+        transform:translate(250px);
+  }
+
+  40% {
+    transform: translate(250px);
+  }
+
+  100% {
+    transform: translate(250px);
+  }
+}
+
+
+.list {
+    list-style: none;
+padding-left: 0px;
+padding-left: 20px;
+}
+
+
+.text {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 15%;
+    left: 140px;
+    transform: rotate(270deg);
+    width: 300px;
+}
+
+.box:hover .text {
+    opacity: 0;
+}
+
+
+
+.item {
+    font-size: 40px;
+}
+
+.item::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(46, 22, 22);
+transform: rotate(45deg);
+margin-right: 15px;
+}
